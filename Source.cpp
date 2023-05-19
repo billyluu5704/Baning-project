@@ -270,7 +270,7 @@ void cus_signin() {
 }
 
 void Admin::generatesummaryreport() {
-	ofstream myfile("users_info.txt", ios::out | ios::app);
+	ofstream myfile("users_info.txt", ios::app);
 	if (myfile.is_open()) {
 		for (Customer& customer : cus) {
 			myfile << customer.getCID() << endl;
@@ -369,7 +369,7 @@ void Admin::sendwarning() {
 }
 
 void Admin::blockedaccounts() {
-	ofstream report("negativeaccounts.txt", ios::out | ios::app);
+	ofstream report("negativeaccounts.txt", ios::app);
 	if (report.is_open()) {
 		for (auto& c : cus) {
 			int i = c.countwarnings();
