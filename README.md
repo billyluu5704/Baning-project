@@ -9,4 +9,4 @@ heard of ”Programming Course 1080C 1021C” at university of Cincinnati. They 
 took the course and learned so much about programming and software development
 in general that they decide to design software for their Bank’s daily activities. They all
 brainstormed the software development process and laid out their development plans
-for Banking Software.
+for Banking Software. (CS 1021 coure's project, created by Rohit Pal Singh-professor of the University of Cincinnati)
