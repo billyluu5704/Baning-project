@@ -1,4 +1,4 @@
-# Baning-project
+# Banking-project
 Create a program for signing in administration and customer banking account with banking functions, and signing up.
 
 You have established your own financial institution to be known as ”UC C++ Program-
