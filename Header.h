@@ -118,7 +118,6 @@ public:
 		setDOJ(DOJ);
 	}
 	float payInterest();
-	vector<string> checkBalancestatus();
 	void blockedaccounts();
 	void sendwarning();
 };
