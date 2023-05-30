@@ -568,12 +568,16 @@ void cus_signin() {
 	std::cout << "Enter username: "; cin >> usn;
 	std::cout << "Enter password: "; cin >> pass;
 	bool check = checkcussignin(usn, pass);
-	while (check == false) {
+	int n = 1;
+	while (check == false && n <= 3) {
 		std::cout << "Incorrect username or password or you have been receiving warning more than 3 times! Pay the debt." << endl;
-		std::cout << "Re-nter username: "; cin >> usn;
+		std::cout << "Re-enter username: "; cin >> usn;
 		std::cout << "Re-enter password: "; cin >> pass;
+		n++;
 	}
-	Cus_func(c);
+	while (check == true) {
+		Cus_func(c);
+	}
 }
 
 void ad_func(Admin a) {
@@ -608,11 +612,15 @@ void ad_signin() {
 	cout << "Enter username: "; cin >> usn;
 	cout << "Enter password: "; cin >> pass;
 	bool check = checkadsignin(usn, pass);
-	while (check == false) {
+	int n = 1;
+	while (check == false && n <= 3) {
 		std::cout << "Incorrect. Re-enter username: "; cin >> usn;
 		std::cout << "Incorrect. Re-enter password: "; cin >> pass;
+		n++;
 	}
-	ad_func(a);
+	while (check == true) {
+		ad_func(a);
+	}
 }
 
 int main() {
