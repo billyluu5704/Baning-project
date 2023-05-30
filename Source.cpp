@@ -120,7 +120,7 @@ string username(string fn, string ln) {
 	vector<Admin>a = readadtextfile("List_of_Admin.txt");
 	for (int i = 0; i < c.size(); i++) {
 		for (int j = 0; j < a.size(); j++) {
-			while (usn == c[i].getUSN() || usn == a[i].getUSN()) {
+			while (usn == c[i].getUSN() || usn == a[j].getUSN()) {
 				usn = ln + fn + to_string(ran);
 			}
 		}
