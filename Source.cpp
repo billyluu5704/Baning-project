@@ -490,7 +490,7 @@ void signup() {
 void Cus_func(Customer c) {
 	int n = 0;
 	while (n != 7) {
-		std::cout << "1. Statement summary last N transactions" << endl;
+		std::cout << "\n1. Statement summary last N transactions" << endl;
 		std::cout << "2. Current Balance" << endl;
 		std::cout << "3. Withdraw" << endl;
 		std::cout << "4. Deposit" << endl;
@@ -579,7 +579,7 @@ void cus_signin() {
 void ad_func(Admin a) {
 	int c = 0;
 	while (c != 4) {
-		std::cout << "1. Pay Monthly Interest" << endl;
+		std::cout << "\n1. Pay Monthly Interest" << endl;
 		std::cout << "2. List of blocked accounts" << endl;
 		std::cout << "3. Send warning" << endl;
 		std::cout << "4. Log out" << endl;
@@ -618,7 +618,7 @@ void ad_signin() {
 int main() {
 	int choose = 0;
 	while (choose != 4) {
-		std::cout << "**********Welcome to the Home Page of your banking account!**********" << endl;
+		std::cout << "\n**********Welcome to the Home Page of your banking account!**********" << endl;
 		std::cout << "1. Admin Sign In" << endl;
 		std::cout << "2. Customer Sign In" << endl;
 		std::cout << "3. Sign up Page" << endl;
