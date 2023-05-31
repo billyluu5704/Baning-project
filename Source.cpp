@@ -488,6 +488,7 @@ void signup() {
 }
 
 void Cus_func(Customer c) {
+	read_report("account_balance_report.txt");
 	int n = 0;
 	while (n != 7) {
 		std::cout << "\n1. Statement summary last N transactions" << endl;
@@ -532,11 +533,11 @@ void Cus_func(Customer c) {
 		else if (n == 6) {
 			c.showInboxMessages(c);
 		}
+		generate_report(c);
 	}
 	if (n == 7) {
 		std::cout << "You are being directed back to Hompage!" << endl;
 	}
-	generatesummaryreport(c);
 }
 
 bool checkcussignin(string usn, string pass) {
