@@ -21,7 +21,7 @@ float Customer::withdrawal(float out, Customer c) {
 	c.setCB(n);
 	if (!transactions.size()) {
 		if (n >= 0) {
-			printf("Transaction successfully. Your current balance: $%.3f\n", cb);
+			printf("Transaction successfully. Your current balance: $%.3f\n", n);
 		}
 		else {
 			std::cout << "You have a negative balance and you will have to pay interest" << endl;
