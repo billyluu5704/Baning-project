@@ -1,7 +1,7 @@
 #pragma once
-#ifndef Header_H
-#define Header_H
-#include "Header.h"
+#ifndef Bank_H
+#define Bank_H
+#include "Bank.h"
 #include<iostream>
 #include<vector>
 #include<string>
