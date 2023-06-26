@@ -8,7 +8,7 @@
 #include<string>
 #include<vector>
 #include<ctime>
-#include"Header.h"
+#include"Bank.h"
 
 using namespace std;
 vector<Customer> cus;
