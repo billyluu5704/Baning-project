@@ -484,12 +484,18 @@ void Cus_func(Customer c) {
 			{
 				double out;
 				std::cout << "How much do you want to have? \n"; cin >> out;
+				while (out < 0) {
+					std::cout << "Invalid Value. How much do you want to have? "; cin >> out;
+				}
 				c.withdrawal(out);
 			}
 			else if (n == 4)
 			{
 				double m;
 				std::cout << "How much have you inputed? \n"; cin >> m;
+				while (m < 0) {
+					std::cout << "Invalid Value. Re-enter: "; cin >> m;
+				}
 				c.deposit(m);
 			}
 			else if (n == 5)
