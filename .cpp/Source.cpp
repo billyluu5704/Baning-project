@@ -484,7 +484,7 @@ void Cus_func(Customer c) {
 			{
 				double out;
 				std::cout << "How much do you want to have? \n"; cin >> out;
-				while (out < 0) {
+				while (out <= 0) {
 					std::cout << "Invalid Value. How much do you want to have? "; cin >> out;
 				}
 				c.withdrawal(out);
@@ -493,7 +493,7 @@ void Cus_func(Customer c) {
 			{
 				double m;
 				std::cout << "How much have you inputed? \n"; cin >> m;
-				while (m < 0) {
+				while (m <= 0) {
 					std::cout << "Invalid Value. Re-enter: "; cin >> m;
 				}
 				c.deposit(m);
@@ -504,6 +504,9 @@ void Cus_func(Customer c) {
 				long to_cid;
 				std::cout << "Enter the customer's cid that you want to transfer to: "; cin >> to_cid;
 				std::cout << "Enter the amount of money you want to transfer: "; cin >> t;
+				while (t <= 0) {
+					std::cout << "Invalid value. Please Re-enter: "; cin >> t;
+				}
 				c.transfer(t, to_cid);
 			}
 			else if (n == 6) {
